@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+      <aside>
+        <div class="top" style="background-color:gray">
+            <div class="hello">
+                <div class="logo" style="position: relative;">
+                    <img src="C:\Users\pc\Downloads\autowash.png" style="border-radius: 100px;">
+                    <h2 style="position: absolute; right: -100px; top: 15px;">FLASH<span class="danger">wash</span></h2>
+                </div>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons">
+                    close
+                    </span>
+            </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active"> 
+                    <span class="material-icons active">space_dashboard</span>
+                    <h3>DASHBOARD</h3>
+                </a>
+                <a id="id-employee" href="employee.html" class="active"> 
+                    <span class="material-icons active">badge</span>
+                    <h3>EMPLOYEE</h3>
+                </a>
+                <a id="id-service" href="#" class="active"> 
+                    <span class="material-icons active">home_repair_service</span>
+                    <h3>SERVICE</h3>
+                </a>
+                <a id="id-facture" href="#" class="active"> 
+                    <span class="material-icons active">payments</span>
+                    <h3>FACTURE</h3>
+                </a>
+                <a id="id-reservation" href="#" class="active"> 
+                    <span class="material-icons active">event_seat</span>
+                    <h3>RESERVATION</h3>
+                </a>
+                <a id="id-client" href="#" class="active"> 
+                    <span class="material-icons active">person</span>
+                    <h3>CLIENT</h3>
+                </a>
+                <a id="exit-link" href="#" class="active"> 
+                    <span class="material-icons active">logout</span>
+                    <h3>DECONNEXION</h3>
+                </a>
+            </div>
+        </aside>
+    <main>
+        <h1>DASHBOARD</h1>
+        <br>
+        <div class="date">
+            <input type="date">
+        </div>
+        <br>
+        <div class="insights">
+            <div class="bicycle">
+                <span class="material-icons">pedal_bike</span>
+               <div class="middle">
+                <div class="left">
+                <h2>BICYCLE</h2>
+                <h2> 15 DH </h2>
+                </div>
+                <div class="progress">
+                    <svg>
+                        <circle cx='38' cy='38' r='36'></circle>
+                    </svg>
+                    <div class="num">
+                        <p>100%</p>
+                    </div>
+                </div>
+               </div>
+               <small class="text-muted"> TEMPS: 5 MIN </small>
+            </div>
+           <!------- end of bicycle----->
+           <div class="bike">
+            <span class="material-icons">two_wheeler</span>
+           <div class="middle">
+            <div class="left">
+            <h2>BIKE</h2>
+            <h2> 20 DH </h2>
+            </div>
+            <div class="progress">
+                <svg>
+                    <circle cx='38' cy='38' r='36'></circle>
+                </svg>
+                <div class="num">
+                    <p>100%</p>
+                </div>
+            </div>
+           </div>
+           <small class="text-muted"> TEMPS: 10 MIN </small>
+        </div>
+       <!------- end of bike----->
+       <div class="car">
+        <span class="material-icons">directions_car_filled</span>
+       <div class="middle">
+        <div class="left">
+        <h2>CAR</h2>
+        <h2> 30 DH </h2>
+        </div>
+        <div class="progress">
+            <svg>
+                <circle cx='38' cy='38' r='36'></circle>
+            </svg>
+            <div class="num">
+                <p>100%</p>
+            </div>
+        </div>
+       </div>
+       <small class="text-muted"> TEMPS: 60 MIN </small>
+    </div>
+   <!------- end of car----->
+   <div class="truck">
+    <span class="material-icons">local_shipping</span>
+   <div class="middle">
+    <div class="left">
+    <h2>TRUCK</h2>
+    <h2> 60 DH </h2>
+    </div>
+    <div class="progress">
+        <svg>
+            <circle cx='38' cy='38' r='36'></circle>
+        </svg>
+        <div class="num">
+            <p>100%</p>
+        </div>
+    </div>
+   </div>
+   <small class="text-muted"> TEMPS: 180 MIN </small>
+</div>
+<!------- end of truck----->
+        </div>
+    </main>
+     <div class="right">
+        <div class="top">
+            <div class="theme-toggler">
+                <span class="material-icons active">light_mode</span>
+                <span class="material-icons"onclick="changetheme()">dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p>Bonjour,<b>Monsieur</b></p>
+                    <small class="text-muted">admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="C:\Users\pc\Downloads\admin.png">
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+    <script src="dashboard.js"></script>
+    
+</body>
+</html>

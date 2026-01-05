@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier un Client</title>
+    <style>
+        :root {
+    --color-primary: #7380ec;
+    --color-danger:#1f0dc2;
+    --color-success:#41f1b6;
+    --color-warning:#ffcd73;
+    --color-white:#fff;
+    --color-info-dark:#113a6d;
+    --colo-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    
+    --card-border-radius:2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow:0 2rem 3rem var(--color-light);
+
+}
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: thistle;
+    }
+    .container{
+        background-color: #424242;
+        padding: 20px;
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--box-shadow);
+        color: var(--color-white);
+        width: 931px;
+        margin: 10px;
+        text-align: center;
+        border: 12px solid var(--color-dark);
+    }
+    h1{
+        color: var(--color-warning);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        width: 101%;
+    }
+    input{
+        padding: 11px;
+        border: 6px solid #111a1a;
+        border-radius: var(--border-radius-2);
+        width: 97%;
+        font-family: math;
+        text-align: -webkit-center;
+        color: black;
+        font-size: xx-large;
+    }
+    
+    label{
+        color: #ffffff;
+        font-size: larger;
+    }
+    button{
+        background-color:rgb(39, 26, 158);
+        color: var(--color-white);
+        padding: 10px 20px;
+        border: none;
+        border-radius: var(--border-radius-1);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        color: #111a1a;
+        box-shadow: inset;
+    }
+    button:hover{
+        background-color:#516183;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>Modifier un client</h1>
+
+<form id="modifierClientForm">
+    <label for="id">ID Client :</label>
+    <input type="text" id="id" required>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" required>
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" required>
+    <label for="cin">CIN :</label>
+    <input type="text" id="cin" required>
+    <button type="submit">Modifier</button>
+</form>
+        </main>
+    </div>
+    <script>
+// Script pour modifier un client
+const clients = JSON.parse(localStorage.getItem('clients')) || [];
+const index = localStorage.getItem('modifierClientIndex');
+
+if (index !== null) {
+    const client = clients[index];
+    document.getElementById('id').value = client.id;
+    document.getElementById('nom').value = client.nom;
+    document.getElementById('prenom').value = client.prenom;
+    document.getElementById('cin').value = client.cin;
+
+    document.getElementById('modifierClientForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        client.id = document.getElementById('id').value;
+        client.nom = document.getElementById('nom').value;
+        client.prenom = document.getElementById('prenom').value;
+        client.cin = document.getElementById('cin').value;
+        clients[index] = client;
+        localStorage.setItem('clients', JSON.stringify(clients));
+        window.location.href = 'client.html';
+    });
+}
+    </script>
+</body>
+</html>

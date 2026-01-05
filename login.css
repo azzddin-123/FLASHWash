@@ -1,0 +1,97 @@
+:root {
+    --color-primary: #7380ec;
+    --color-danger:#1f0dc2;
+    --color-success:#41f1b6;
+    --color-warning:#ffcd73;
+    --color-white:#fff;
+    --color-info-dark:#113a6d;
+    --colo-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132,139,200,0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    
+    --card-border-radius:2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow:0 2rem 3rem var(--color-light);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #2c2c2c;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 59px;
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 4px 6px rgb(215, 41, 238);
+    width:471px;
+    text-align: center;
+}
+.containe:hover{
+    box-shadow: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+h1{
+    font-family: monospace;
+}
+
+input, button {
+    padding: 15px;
+    font-size: 16px;
+    border: 0.1px solid #6e49b3;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgb(97 52 102);
+    font-family: monospace;
+}
+
+button {
+    background-color: #2d3a81;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    font-family: monospace;
+}
+button:hover {
+    background-color: #c200fd;
+    box-shadow: inset;
+}
+
+table {
+    width: 100%;
+    border-collapse: unset;
+    margin-bottom: 20px;
+}
+th{
+    font-family: monospace;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: inherit;
+}
+
+table th {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICE</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <div class="container">
+      <aside>
+        <div class="top" style="background-color:gray">
+            <div class="hello">
+                <div class="logo" style="position: relative;">
+                    <img src="C:\Users\pc\Downloads\autowash.png" style="border-radius: 100px;">
+                    <h2 style="position: absolute; right: -100px; top: 15px;">FLASH<span class="danger">wash</span></h2>
+                </div>
+            </div>
+            <div class="close" id="close-btn">
+                <span class="material-icons">
+                    close
+                    </span>
+            </div>
+            </div>
+            <div class="sidebar">
+                <a id="id-dashboard" href="#" class="active"> 
+                    <span class="material-icons active">space_dashboard</span>
+                    <h3>DASHBOARD</h3>
+                </a>
+                <a id="id-employee" href="#" class="active"> 
+                    <span class="material-icons">badge</span>
+                    <h3>EMPLOYEE</h3>
+                </a>
+                <a href="#" class="active"> 
+                    <span class="material-icons">home_repair_service</span>
+                    <h3>SERVICE</h3>
+                </a>
+                <a id="id-facture" href="#" class="active"> 
+                    <span class="material-icons">payments</span>
+                    <h3>FACTURE</h3>
+                </a>
+                <a id="id-reservation" href="#" class="active"> 
+                    <span class="material-icons">event_seat</span>
+                    <h3>RESERVATION</h3>
+                </a>
+                <a id="id-client" href="#" class="active"> 
+                    <span class="material-icons">person</span>
+                    <h3>CLIENT</h3>
+                </a>
+                <a id="exit-link" href="#" class="active"> 
+                    <span class="material-icons">logout</span>
+                    <h3>DECONNEXION</h3>
+                </a>
+            </div>
+        </aside>
+    <main>
+        <h1>SERVICE</h1>
+        <br>
+        <div class="date">
+            <input type="date">
+        </div>
+        <br>
+        <div class="insights">
+            
+            <div class="tableau-service">
+                <table>
+                  <thead>
+                      <tr>
+                        <th>TYPE</th>
+                          <th>SERVICE</th>
+                          <th>ACTION</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>VOITURE</td>
+                        <td>lavage simple</td>
+                          <td>
+                              <button class="btn modifier">MODIFIER</button>
+                              <button class="btn supprimer">SUPPRIMER</button>
+                          </td>
+                      </tr>
+                  </tbody>
+                </table>
+                <div class="add-employee-container">
+                  <button class="btn ajouter">AJOUTER UN EMPLOYÉ</button>
+              </div>
+        </div>
+    </main>
+     <div class="right">
+        <div class="top">
+            <div class="theme-toggler">
+                <span class="material-icons active">light_mode</span>
+                <span class="material-icons">dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p>Bonjour,<b>Monsieur</b></p>
+                    <small class="text-muted">admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="C:\Users\pc\Downloads\admin.png">
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+    <script src="service.js"></script>
+    
+</body>
+</html>
